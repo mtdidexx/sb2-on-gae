@@ -1,0 +1,62 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : net.katrinka : sb2-on-gae-0.0.1-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/build/libs/exploded/sb2-on-gae-0.0.1-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/sb2-on-gae-0.0.1-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="sb2-on-gae_main/web/Web Gradle : sb2-on-gae-0.0.1-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="sb2-on-gae_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/out/production/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-actuator/2.0.0.M3/b048b35383c75f975c39f7af6a5b629d56850ad2/spring-boot-starter-actuator-2.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-security/2.0.0.M3/3d9a236f11d0b631f90734662b3692012ed9fb13/spring-boot-starter-security-2.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.0.0.M3/d952968c238f47740c5eb645b71dd5c4b88e699d/spring-boot-starter-web-2.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-devtools/2.0.0.M3/d235e4c112cc585116f17aa0c308ac13a2b27364/spring-boot-devtools-2.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.0.0.M3/a4090261aaede823d6e3cbe85d18d2197418b57a/spring-boot-starter-2.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-actuator/2.0.0.M3/afebe3779bb5f9e8b33db364baefff79b7abf7d4/spring-boot-actuator-2.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-config/5.0.0.M3/654b403adf9744f9ffe90530f9a7a7548baaa6fe/spring-security-config-5.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.0.RC3/a384908e784b8add8c6818298b9c412e913fe655/spring-webmvc-5.0.0.RC3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-web/5.0.0.M3/802833ab79d9e42ac0cdb9aee5e30cfd917f725e/spring-security-web-5.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.0.0.M3/e81d9ec401145306d0ae39e72f423b35f146f62b/spring-boot-autoconfigure-2.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.0.0.M3/5b6a0aaa1ca6c95252accf73a2cac0e6542baefb/spring-boot-2.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.security/spring-security-core/5.0.0.M3/7b5c15f1114ee3364571134ba721c1e1047ce0a4/spring-security-core-5.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.0.RC3/3c2aa62a33a0d07467e79ad732c9fea0c89dc4d9/spring-context-5.0.0.RC3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.0.RC3/5e66ddf2db74da31c78cbd0d6d1ee4df486400bc/spring-aop-5.0.0.RC3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.0.0.M3/a32bfe0359043d10627f85c07a71b8118810a1c9/spring-boot-starter-json-2.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-validator/5.4.1.Final/fc71e53520e1030d278f682b796c88265b94c699/hibernate-validator-5.4.1.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.0.RC3/c91f05b509e2bb02beaee5aa56c28700faa74a4a/spring-web-5.0.0.RC3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.0.0.M3/fe34bc88f853b888cdb201f350a5d2ce1a0b7df1/spring-boot-starter-logging-2.0.0.M3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.0.RC3/64092fa31a5578e4b809955850b6124faa02abca/spring-beans-5.0.0.RC3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.0.RC3/705673b5898e1d937da90727dfc29dc2adbc6f0c/spring-expression-5.0.0.RC3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.0.RC3/592266b28ff736d5bc983c3b24e9f888d06833d7/spring-core-5.0.0.RC3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.18/e4a441249ade301985cb8d009d4e4a72b85bf68e/snakeyaml-1.18.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.9.0.pr4/f601732017f592c6cdf566b0f91debee7f9afe5f/jackson-datatype-jdk8-2.9.0.pr4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.9.0.pr4/eea6bb98126327c34a17c705eb2bd6065fa1c182/jackson-datatype-jsr310-2.9.0.pr4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.9.0.pr4/c36981bc765830a646f8f0b40f6c8b8a1c43dbcd/jackson-module-parameter-names-2.9.0.pr4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-kotlin/2.9.0.pr4/ae40556517ed01452ca25413d2b5523226423bf9/jackson-module-kotlin-2.9.0.pr4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.0.pr4/e96baca7953374a502eb995d3901cad7580d3741/jackson-databind-2.9.0.pr4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/8613ae82954779d518631e05daa73a6a954817d5/validation-api-1.1.0.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.3.1.Final/c46217ab74b532568c0ed31dc599db3048bd1b67/jboss-logging-3.3.1.Final.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.3.3/864c8e370a691e343210cc7c532fc198cee460d8/classmate-1.3.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.25/af5364cd6679bfffb114f0dec8a157aaa283b76/jul-to-slf4j-1.7.25.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/log4j-over-slf4j/1.7.25/a87bb47468f47ee7aabbd54f93e133d4215769c3/log4j-over-slf4j-1.7.25.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.0.0.RC3/c53c3be2136bc4258b1b72dc45271b9ebd050198/spring-jcl-5.0.0.RC3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.9.0.pr4/66cdc0083e48897453c4b4f69860315c0e6618b/jackson-annotations-2.9.0.pr4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.9.0.pr4/565544a9badb22e546e23bd07765e30fa2cb1065/jackson-core-2.9.0.pr4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
