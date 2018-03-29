@@ -1,18 +1,10 @@
-management:
+spring:
   security:
-    enabled: false
-  info:
-    git:
-      enabled: true
-  health:
-    diskspace:
-      enabled: false
-security:
-  basic:
-    enabled: true
-  user:
-    name: admin
-    password: ch0colateCak3
+    user:
+      name: admin
+      password: ch0colateCak3
+  application:
+    name: 'Boo Ya'
 logging:
   level:
     org.springframework: INFO

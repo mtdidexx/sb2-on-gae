@@ -1,23 +1,13 @@
 package net.katrinka.acceptance;
 
-import io.restassured.RestAssured;
-import net.katrinka.AcceptanceTest;
-import org.junit.BeforeClass;
 import org.junit.Test;
-import org.junit.experimental.categories.Category;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
+import static org.hamcrest.Matchers.equalTo;
 
-@Category(AcceptanceTest.class)
-public class SayHelloApiTest {
+public class SayHelloApiTest extends ApiAcceptanceTest {
     private String path = "/sayhello";
-
-    @BeforeClass
-    public static void restAssuredConfig() {
-//        RestAssured.baseURI = "http://localhost:8080";
-        RestAssured.baseURI = "https://lims-mdonahue-sb.appspot.com";
-    }
 
     @Test
     public void sayHelloApi() {
@@ -27,7 +17,8 @@ public class SayHelloApiTest {
                 .when()
                 .get(path)
                 .then()
-                .assertThat().statusCode(200);
+                .assertThat().statusCode(200)
+                .body(equalTo("Hello, Sucka!"));
     }
 
     @Test
