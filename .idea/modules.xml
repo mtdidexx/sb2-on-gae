@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sb2-on-gae.iml" filepath="$PROJECT_DIR$/sb2-on-gae.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sb2-on-gae_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sb2-on-gae_main.iml" group="sb2-on-gae" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sb2-on-gae_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sb2-on-gae_test.iml" group="sb2-on-gae" />
+    </modules>
+  </component>
+</project>
