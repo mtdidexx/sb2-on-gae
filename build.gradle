@@ -31,10 +31,10 @@ repositories {
 
 configurations {
     providedRuntime
-//    all*.exclude module: 'spring-boot-starter-tomcat'
-//    // don't want "jul" in the GAE Standard env
-//    all*.exclude group: 'org.slf4j', module: 'jul-to-slf4j'
-//    all*.exclude group: 'org.slf4j', module: 'simple-slf4j'
+    all*.exclude module: 'spring-boot-starter-tomcat'
+    // don't want "jul" in the GAE Standard env
+    all*.exclude group: 'org.slf4j', module: 'jul-to-slf4j'
+    all*.exclude group: 'org.slf4j', module: 'simple-slf4j'
 }
 
 dependencies {
@@ -42,6 +42,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-security')
     compile('org.springframework.boot:spring-boot-starter-web')
     runtime('org.springframework.boot:spring-boot-devtools')
+    providedCompile('javax.servlet:javax.servlet-api:3.1.0')
     compileOnly('org.projectlombok:lombok')
     providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
     testCompile('org.springframework.boot:spring-boot-starter-test')
@@ -50,9 +51,23 @@ dependencies {
     testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
 }
 
+test {
+    useJUnit {
+        excludeCategories 'net.katrinka.AcceptanceTest'
+    }
+}
+
+task acceptanceTest(type: Test) {
+    group 'verification'
+    description "Run API tests against running application"
+    useJUnit {
+        includeCategories 'net.katrinka.AcceptanceTest'
+    }
+}
+
 appengine {
     deploy {
-        //noinspection GroovyAssignabilityCheck
-        project = 'lims-mdonahue-sb'
+        stopPreviousVersion = true
+        promote = true
     }
 }
