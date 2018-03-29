@@ -8,6 +8,7 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath 'com.google.cloud.tools:appengine-gradle-plugin:+'
     }
 }
 
@@ -16,6 +17,7 @@ apply plugin: 'groovy'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'war'
+apply plugin: 'com.google.cloud.tools.appengine'
 
 group = 'net.katrinka'
 version = '0.0.1-SNAPSHOT'
@@ -29,6 +31,10 @@ repositories {
 
 configurations {
     providedRuntime
+//    all*.exclude module: 'spring-boot-starter-tomcat'
+//    // don't want "jul" in the GAE Standard env
+//    all*.exclude group: 'org.slf4j', module: 'jul-to-slf4j'
+//    all*.exclude group: 'org.slf4j', module: 'simple-slf4j'
 }
 
 dependencies {
@@ -40,4 +46,13 @@ dependencies {
     providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('org.springframework.security:spring-security-test')
+    testCompile 'io.rest-assured:rest-assured:3.0.7'
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+}
+
+appengine {
+    deploy {
+        //noinspection GroovyAssignabilityCheck
+        project = 'lims-mdonahue-sb'
+    }
 }

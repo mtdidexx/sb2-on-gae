@@ -1,0 +1,12 @@
+runtime: java8
+env: standard #or 'flex' if you have the free trial or paid version.
+
+runtime_config:  # Optional
+  jdk: openjdk8
+
+handlers:
+- url: /.*
+  script: this field is required, but ignored
+
+manual_scaling:
+  instances: 1
