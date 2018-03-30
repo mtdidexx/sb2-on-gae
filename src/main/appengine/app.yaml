@@ -1,5 +1,5 @@
 runtime: java8
-env: standard #or 'flex' if you have the free trial or paid version.
+env: standard
 
 runtime_config:  # Optional
   jdk: openjdk8
