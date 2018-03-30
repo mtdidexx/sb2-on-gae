@@ -1,9 +1,9 @@
 cron:
 - description: Used to start the Integration process
   url: /cron/startIntegration
-  schedule: every 1 minutes from 10:00 to 15:00
+  schedule: every 10 minutes from 10:00 to 15:00
   timezone: America/New_York
-#  retry_parameters:
-#    job_age_limit: 2h
-#    min_backoff_seconds: 300
-#    max_doublings: 5
+  retry_parameters:
+    job_age_limit: 2h
+    min_backoff_seconds: 300
+    max_doublings: 5

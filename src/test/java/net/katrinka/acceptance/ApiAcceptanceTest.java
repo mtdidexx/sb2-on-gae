@@ -9,7 +9,7 @@ import org.junit.experimental.categories.Category;
 public class ApiAcceptanceTest {
     @BeforeClass
     public static void restAssuredConfig() {
-        RestAssured.baseURI = "http://localhost:8080";
-//        RestAssured.baseURI = "https://lims-mdonahue-sb.appspot.com";
+//        RestAssured.baseURI = "http://localhost:8080";
+        RestAssured.baseURI = "https://lims-mdonahue-sb.appspot.com";
     }
 }
