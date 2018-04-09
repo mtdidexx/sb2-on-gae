@@ -1,8 +1,4 @@
 spring:
-  security:
-    user:
-      name: admin
-      password: ch0colateCak3
   application:
     name: 'Boo Ya'
 logging:

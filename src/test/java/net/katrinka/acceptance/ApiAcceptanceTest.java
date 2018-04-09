@@ -8,11 +8,11 @@ import org.junit.experimental.categories.Category;
 @Category(AcceptanceTest.class)
 public class ApiAcceptanceTest {
 
-//    String username = "action";
-//    String password = "jackson";
+    String username = "action";
+    String password = "jackson";
 
-    String username = "admin";
-    String password = "ch0colateCak3";
+//    String username = "admin";
+//    String password = "ch0colateCak3";
 
     @BeforeClass
     public static void restAssuredConfig() {

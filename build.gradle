@@ -17,7 +17,12 @@ plugins {
     id 'war'
     id 'jacoco'
     id 'io.franzbecker.gradle-lombok' version '1.11'
+    id 'com.gorylenko.gradle-git-properties' version '1.4.17'
 }
+
+// https://github.com/franzbecker/gradle-lombok
+// https://github.com/n0mer/gradle-git-properties
+// https://github.com/commercehub-oss/gradle-cucumber-jvm-plugin
 
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'org.springframework.boot'
@@ -46,7 +51,6 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     runtime('org.springframework.boot:spring-boot-devtools')
     providedCompile('javax.servlet:javax.servlet-api:3.1.0')
-    compileOnly('org.projectlombok:lombok')
     providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('org.springframework.security:spring-security-test')
@@ -72,5 +76,14 @@ appengine {
     deploy {
         stopPreviousVersion = true
         promote = true
+    }
+}
+
+springBoot {
+    buildInfo() {
+        //noinspection GroovyAssignabilityCheck
+        properties {
+            additional = ['Some Random Property': 'F00bar!!']
+        }
     }
 }
