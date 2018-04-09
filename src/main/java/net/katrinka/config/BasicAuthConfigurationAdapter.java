@@ -13,6 +13,7 @@ public class BasicAuthConfigurationAdapter extends WebSecurityConfigurerAdapter 
                 .anyRequest()
                 .authenticated()
                 .and()
+                .csrf().disable()
                 .httpBasic();
     }
 }
