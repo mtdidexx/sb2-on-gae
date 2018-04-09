@@ -9,10 +9,10 @@ import static org.hamcrest.Matchers.equalTo;
 public class ActuatorApiTest extends ApiAcceptanceTest {
 
     @Test
-    public void healthTestDoesNotRequireAuth() {
+    public void healthEndpointRequiresAuth() {
         String path = "/actuator/health";
         given()
-                .log().uri()
+                .auth().preemptive().basic(username, password)
         .when()
                 .get(path)
         .then()
@@ -29,11 +29,17 @@ public class ActuatorApiTest extends ApiAcceptanceTest {
     @Test
     public void infoEndpointUsesBasicAuth() {
         given()
-                .auth().preemptive().basic("admin", "ch0colateCak3")
+                .auth().preemptive().basic(username, password)
         .when()
                 .get("/actuator/info")
         .then()
                 .assertThat().statusCode(200)
                 .body(equalTo("{}"));
+    }
+
+    @Test
+    public void beansActuatorEndpointNotEnabaledByDefault() {
+        when().get("/actuator/beans")
+        .then().assertThat().statusCode(401);
     }
 }

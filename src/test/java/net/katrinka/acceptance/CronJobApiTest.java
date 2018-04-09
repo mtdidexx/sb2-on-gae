@@ -12,7 +12,7 @@ public class CronJobApiTest extends ApiAcceptanceTest {
     @Test
     public void cronJobInitiateApi() {
         given()
-                .log().uri()
+                .auth().preemptive().basic(username, password)
         .when()
                 .get(path)
         .then()

@@ -13,10 +13,10 @@ public class SayHelloApiTest extends ApiAcceptanceTest {
     public void sayHelloApi() {
         given()
                 .log().uri()
-                .auth().preemptive().basic("admin", "ch0colateCak3")
-                .when()
+                .auth().preemptive().basic(username, password)
+        .when()
                 .get(path)
-                .then()
+        .then()
                 .assertThat().statusCode(200)
                 .body(equalTo("Hello, Sucka!"));
     }
@@ -25,8 +25,20 @@ public class SayHelloApiTest extends ApiAcceptanceTest {
     public void requiresAuth() {
         when()
                 .get(path)
-                .then()
+        .then()
                 .assertThat().statusCode(401);
+
+    }
+
+    @Test
+    public void sayHelloToMyLittleFriend() {
+        given()
+                .auth().preemptive().basic(username, password)
+        .when()
+                .put("/sayhello/Tony")
+        .then()
+                .assertThat().statusCode(200)
+                .body(equalTo("Hello there, Tony"));
 
     }
 }

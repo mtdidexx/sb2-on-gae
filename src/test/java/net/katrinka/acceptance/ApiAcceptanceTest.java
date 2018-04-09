@@ -7,9 +7,14 @@ import org.junit.experimental.categories.Category;
 
 @Category(AcceptanceTest.class)
 public class ApiAcceptanceTest {
+    static String hostName = "http://localhost:8080";
+
+    String username = "admin";
+//    String password = "f00bar";
+    String password = "ch0colateCak3";
+
     @BeforeClass
     public static void restAssuredConfig() {
-        RestAssured.baseURI = "http://localhost:8080";
-//        RestAssured.baseURI = "https://lims-mdonahue-sb.appspot.com";
+        RestAssured.baseURI = System.getProperty("testHost", hostName);
     }
 }
