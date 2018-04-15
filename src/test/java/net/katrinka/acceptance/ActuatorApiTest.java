@@ -5,6 +5,7 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.startsWith;
 
 public class ActuatorApiTest extends ApiAcceptanceTest {
 
@@ -34,7 +35,7 @@ public class ActuatorApiTest extends ApiAcceptanceTest {
                 .get("/actuator/info")
         .then()
                 .assertThat().statusCode(200)
-                .body(equalTo("{}"));
+                .body(startsWith("{"));
     }
 
     @Test

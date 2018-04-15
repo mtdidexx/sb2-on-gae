@@ -20,6 +20,7 @@ plugins {
     id 'com.gorylenko.gradle-git-properties' version '1.4.17'
 }
 
+// Links to plugin docs
 // https://github.com/franzbecker/gradle-lombok
 // https://github.com/n0mer/gradle-git-properties
 // https://github.com/commercehub-oss/gradle-cucumber-jvm-plugin
